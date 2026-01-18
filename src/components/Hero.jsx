@@ -11,8 +11,8 @@ const Hero = () => {
       <div className="absolute bottom-1/4 right-10 w-96 h-96 bg-secondary/10 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <FadeIn direction="right">
+        <div className="max-w-4xl mx-auto text-center">
+          <FadeIn>
             <div>
               <motion.div
                 initial={{ opacity: 0, x: -20 }}
@@ -28,12 +28,12 @@ const Hero = () => {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-primary"> Reality</span>
               </h1>
 
-              <p className="text-xl text-gray-600 mb-8">
+              <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
                 We bridge the gap between vision and reality through cutting-edge technology. 
                 Creating awesome digital experiences since 2022.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -53,7 +53,7 @@ const Hero = () => {
                 </motion.button>
               </div>
 
-              <div className="mt-12 grid grid-cols-3 gap-8">
+              <div className="mt-16 grid grid-cols-3 gap-8 max-w-2xl mx-auto">
                 <div>
                   <div className="text-3xl font-bold text-primary">51-200</div>
                   <div className="text-gray-600">Team Members</div>
@@ -68,33 +68,6 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-          </FadeIn>
-
-          <FadeIn direction="left" delay={0.3}>
-            <motion.div
-              animate={{ y: [0, -20, 0] }}
-              transition={{ duration: 6, repeat: Infinity }}
-              className="relative"
-            >
-              {/* Removed the Live Dashboard mock interface */}
-              
-              {/* Floating Elements (keeping these since they're separate) */}
-              <motion.div
-                animate={{ y: [0, -30, 0] }}
-                transition={{ duration: 4, repeat: Infinity, delay: 1 }}
-                className="absolute -top-8 -right-8 bg-white p-4 rounded-2xl shadow-xl border border-gray-200"
-              >
-                <div className="text-sm font-semibold text-primary">📱 Mobile First</div>
-              </motion.div>
-
-              <motion.div
-                animate={{ y: [0, 30, 0] }}
-                transition={{ duration: 5, repeat: Infinity, delay: 0.5 }}
-                className="absolute -bottom-8 -left-8 bg-white p-4 rounded-2xl shadow-xl border border-gray-200"
-              >
-                <div className="text-sm font-semibold text-secondary">⚡ Fast Delivery</div>
-              </motion.div>
-            </motion.div>
           </FadeIn>
         </div>
       </div>
