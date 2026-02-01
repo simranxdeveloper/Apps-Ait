@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --primary: #2563eb;
   --secondary: #7c3aed;
@@ -9,9 +13,8 @@
 @theme {
   --color-primary: #2563eb;
   --color-secondary: #7c3aed;
- --color-accent: #06b6d4;
+  --color-accent: #06b6d4;
 }
-
 
 body {
   font-family: 'Inter', sans-serif;
@@ -19,8 +22,12 @@ body {
 
 /* Custom animations */
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }
 
 .float-animation {
