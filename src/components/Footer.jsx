@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="flex flex-col items-center space-y-4">
             {/* Brand */}
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-500 rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-gradient-to-br from-orange-700 to-orange-500 rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-base">A</span>
               </div>
               <span className="text-xl font-bold">Apps AiT</span>
@@ -39,7 +39,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
-                  className="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center text-gray-300 hover:text-white transition-colors hover:bg-blue-600"
+                  className="w-9 h-9 rounded-full bg-gray-800 flex items-center justify-center text-gray-300 hover:text-white transition-colors hover:bg-orange-600"
                   aria-label={social.label}
                 >
                   {social.icon}

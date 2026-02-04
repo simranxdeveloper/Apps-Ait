@@ -189,7 +189,7 @@ const AboutPage = () => {
           <div className="max-w-4xl mx-auto">
             <div className="grid lg:grid-cols-2 gap-8">
               <FadeIn direction="right">
-                <div className="bg-gradient-to-br from-primary to-secondary rounded-2xl p-8 text-white">
+                <div className="bg-gradient-to-br from-primary to-secondary rounded-2xl p-8 text-white h-full flex flex-col">
                   <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center mb-6">
                     <Target className="w-6 h-6" />
                   </div>
@@ -197,7 +197,7 @@ const AboutPage = () => {
                   <p className="mb-6">
                     To empower businesses with innovative digital solutions that drive growth, enhance user experiences, and create lasting value in an ever-evolving technological landscape.
                   </p>
-                  <ul className="space-y-3">
+                  <ul className="space-y-3 mt-auto">
                     {['Innovate relentlessly', 'Deliver excellence consistently', 'Empower through technology'].map((item, i) => (
                       <li key={i} className="flex items-center space-x-2">
                         <CheckCircle className="w-4 h-4" />
@@ -209,7 +209,7 @@ const AboutPage = () => {
               </FadeIn>
 
               <FadeIn direction="left" delay={0.2}>
-                <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 text-white">
+                <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 text-white h-full flex flex-col">
                   <div className="w-12 h-12 rounded-xl bg-white/20 flex items-center justify-center mb-6">
                     <Sparkles className="w-6 h-6" />
                   </div>
@@ -217,7 +217,7 @@ const AboutPage = () => {
                   <p className="mb-6">
                     To be the world's most trusted digital transformation partner, recognized for our ability to turn visionary ideas into market-leading digital products that shape the future.
                   </p>
-                  <div className="space-y-4">
+                  <div className="mt-auto">
                     <div className="flex items-center space-x-3">
                       <Clock className="w-5 h-5" />
                       <div>
